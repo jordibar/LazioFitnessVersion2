@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:background="@drawable/border_bottom"
+        android:gravity="center"
+        android:padding="@dimen/paddingTitulo"
+        android:text="@string/laziofitness"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/naranja"
+        android:textSize="@dimen/Titulo"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonCalculaGrasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/border_bottom_slim"
+        android:text="Calcula tu % graso"
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/Lista" />
+
+    <Button
+        android:id="@+id/buttonCalculaPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/border_bottom_slim"
+        android:text="Registra tu peso"
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/Lista" />
+
+    <Button
+        android:id="@+id/buttonCalculaFuerza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/border_bottom_slim"
+        android:text="Mide tu fuerza"
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/Lista" />
+    
+
+</LinearLayout>

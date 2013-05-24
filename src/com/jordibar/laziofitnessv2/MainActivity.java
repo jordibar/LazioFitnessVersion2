@@ -40,7 +40,7 @@ public class MainActivity extends TabActivity{
 		mTabHost.getTabWidget().setDividerDrawable(R.drawable.tab_divider);
 		
 		//Añadimos las pestanas
-		setupTab(new TextView(this), "Principal", "Principal.class");
+		setupTab(new TextView(this), "Principal", "TabGroup1Activity.class");
 		setupTab(new TextView(this), "Contacto", "Contacto.class");
 		setupTab(new TextView(this), "Horarios Clases", "Horarios.class");
 		setupTab(new TextView(this), "Noticias", "Noticias.class");
@@ -54,10 +54,11 @@ public class MainActivity extends TabActivity{
 			TabHost tabHost = getTabHost();
 			TabHost.TabSpec spec;
 			Intent intent;
-			intent = new Intent().setClass(this, Principal.class);
-			if (className.equals("Principal.class"))
+			intent = new Intent().setClass(this, TabGroup1Activity.class);
+			
+			if (className.equals("TabGroup1Activity.class"))
 			{
-				intent = new Intent().setClass(this, Principal.class);
+				intent = new Intent().setClass(this, TabGroup1Activity.class);
 			}
 			if (className.equals("Contacto.class"))
 			{

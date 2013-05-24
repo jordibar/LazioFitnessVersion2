@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-   <color name="naranja">#DF7401</color> 
+   <color name="naranja">#DF7401</color>
+   <color name="blanco">#FFF</color>
+   <color name="negro">#000</color>
+   <color name="transparente">#00FFFFFF</color>
+   <color name="negroAlpha60">#99000000</color>
 </resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:background="@drawable/border_bottom"
+        android:gravity="center"
+        android:padding="@dimen/paddingTitulo"
+        android:text="@string/laziofitness"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/naranja"
+        android:textSize="@dimen/Titulo"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonSocios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/negroAlpha60"
+        android:text="SOCIOS"
+        android:textColor="@color/blanco"
+        android:textColorHint="@color/blanco"
+        android:textSize="@dimen/Titulo" />
+
+    <Button
+        android:id="@+id/buttonNoSocios"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/negroAlpha60"
+        android:text="NO SOCIOS"
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/Titulo" />
+
+</LinearLayout>

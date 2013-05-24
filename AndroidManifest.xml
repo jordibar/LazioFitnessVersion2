@@ -23,10 +23,22 @@
             </intent-filter>
         </activity>
         
+        <activity android:name=".TabGroup1Activity"></activity>
         <activity android:name=".Principal"></activity>
+        <activity android:name=".Principal2"></activity>
         <activity android:name=".Contacto"></activity>
         <activity android:name=".Horarios"></activity>
         <activity android:name=".Noticias"></activity>
+        <activity android:name=".SociosNoSocios"></activity>
+        <activity android:name=".Socios"></activity>
+        <activity android:name=".NoSocios"></activity>
+        <activity android:name=".Promociones"></activity>
+        <activity android:name=".Servicios"></activity>
+        <activity android:name=".Sugerencias"></activity>
+        <activity android:name=".Entreno"></activity>
+        <activity android:name=".CalculaFuerza"></activity>
+        <activity android:name=".CalculaGrasa"></activity>
+        <activity android:name=".CalculaPeso"></activity>
     </application>
 
 </manifest>

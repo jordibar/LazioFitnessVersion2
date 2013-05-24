@@ -3,6 +3,7 @@
 
     <string name="app_name">LazioFitnessVersion2</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="laziofitness">LAZIO FITNESS</string>
+    <string name="errorCalculaGrasaCamposVacios">Los campos &quot;Altura&quot; y &quot;Cadera&quot; son obligatorios</string>
 
 </resources>

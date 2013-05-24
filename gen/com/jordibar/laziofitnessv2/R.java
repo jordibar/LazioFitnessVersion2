@@ -11,9 +11,16 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int blanco=0x7f040001;
         public static final int naranja=0x7f040000;
+        public static final int negro=0x7f040002;
+        public static final int negroAlpha60=0x7f040004;
+        public static final int transparente=0x7f040003;
     }
     public static final class dimen {
+        public static final int Lista=0x7f050004;
+        public static final int Titulo=0x7f050002;
+        public static final int Titulo2=0x7f050003;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Customize dimensions originally defined in res/values/dimens.xml (such as
@@ -22,28 +29,69 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f050000;
         public static final int activity_vertical_margin=0x7f050001;
+        public static final int margin15dp=0x7f050008;
+        public static final int padding15dp=0x7f050006;
+        public static final int paddingTitulo=0x7f050005;
+        public static final int zero=0x7f050007;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int tab_bg_selected=0x7f020001;
-        public static final int tab_bg_selector=0x7f020002;
-        public static final int tab_bg_unselected=0x7f020003;
-        public static final int tab_divider=0x7f020004;
-        public static final int tab_text_selector=0x7f020005;
+        public static final int border_bottom=0x7f020000;
+        public static final int border_bottom_slim=0x7f020001;
+        public static final int bordes_redondeados_rable_row=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int sugerencia=0x7f020004;
+        public static final int tab_bg_selected=0x7f020005;
+        public static final int tab_bg_selector=0x7f020006;
+        public static final int tab_bg_unselected=0x7f020007;
+        public static final int tab_divider=0x7f020008;
+        public static final int tab_text_selector=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f090003;
-        public static final int tabsLayout=0x7f090001;
-        public static final int tabsText=0x7f090002;
+        public static final int action_settings=0x7f090019;
+        public static final int altura=0x7f090004;
+        public static final int botonPrincipal=0x7f09000f;
+        public static final int botonPrincipal2=0x7f090010;
+        public static final int buttonCalculaFuerza=0x7f09000e;
+        public static final int buttonCalculaGrasa=0x7f09000c;
+        public static final int buttonCalculaPeso=0x7f09000d;
+        public static final int buttonCalcular=0x7f090009;
+        public static final int buttonEntreno=0x7f090014;
+        public static final int buttonNoSocios=0x7f090016;
+        public static final int buttonPromociones=0x7f090011;
+        public static final int buttonServicios=0x7f090012;
+        public static final int buttonSocios=0x7f090015;
+        public static final int buttonSugerencias=0x7f090013;
+        public static final int cadera=0x7f090007;
+        public static final int resultado=0x7f09000b;
+        public static final int tableRow1=0x7f090002;
+        public static final int tableRow2=0x7f090005;
+        public static final int tableRow3=0x7f090008;
+        public static final int tableRow5=0x7f09000a;
+        public static final int tabsLayout=0x7f090017;
+        public static final int tabsText=0x7f090018;
         public static final int textView1=0x7f090000;
+        public static final int textView2=0x7f090003;
+        public static final int textView3=0x7f090006;
+        public static final int titulo2=0x7f090001;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int contacto=0x7f030001;
-        public static final int horarios=0x7f030002;
-        public static final int noticias=0x7f030003;
-        public static final int principal=0x7f030004;
-        public static final int tabs_bg=0x7f030005;
+        public static final int calculafuerza=0x7f030001;
+        public static final int calculagrasa=0x7f030002;
+        public static final int calculapeso=0x7f030003;
+        public static final int contacto=0x7f030004;
+        public static final int entreno=0x7f030005;
+        public static final int horarios=0x7f030006;
+        public static final int no_socios=0x7f030007;
+        public static final int noticias=0x7f030008;
+        public static final int principal=0x7f030009;
+        public static final int principal2=0x7f03000a;
+        public static final int promociones=0x7f03000b;
+        public static final int servicios=0x7f03000c;
+        public static final int socios=0x7f03000d;
+        public static final int sociosnosocios=0x7f03000e;
+        public static final int sugerencias=0x7f03000f;
+        public static final int tabs_bg=0x7f030010;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -51,7 +99,8 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060002;
+        public static final int errorCalculaGrasaCamposVacios=0x7f060003;
+        public static final int laziofitness=0x7f060002;
     }
     public static final class style {
         /** 

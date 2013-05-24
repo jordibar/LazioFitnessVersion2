@@ -1,14 +1,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
-
+    android:layout_margin="0dp"
+    android:background="@drawable/sugerencia"
+    android:orientation="vertical"
+    android:padding="0dp" >
+    
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PRINCIPAL"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:background="@color/negro"
+        android:gravity="center"
+        android:padding="@dimen/paddingTitulo"
+        android:text="Un estilo de vida"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#ffffff" />
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/Titulo"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonPrincipal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="@color/transparente" />
+
+    <Button
+        android:id="@+id/botonPrincipal2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin15dp"
+        android:layout_weight="0"
+        android:background="@color/negroAlpha60"
+        android:padding="@dimen/padding15dp"
+        android:text="Entra para conocer más"
+        android:textColor="@color/blanco"
+        android:textSize="16sp" />
 
 </LinearLayout>
