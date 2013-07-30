@@ -5,5 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="laziofitness">LAZIO FITNESS</string>
     <string name="errorCalculaGrasaCamposVacios">Los campos &quot;Altura&quot; y &quot;Cadera&quot; son obligatorios</string>
-
+    <string name="errorPesoCamposVacios">Los campos &quot;Día&quot; y &quot;Peso&quot; son obligatorios</string>
+    
 </resources>

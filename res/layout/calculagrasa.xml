@@ -53,7 +53,7 @@
             android:paddingTop="8dp" >
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tv_noticia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -75,8 +75,6 @@
                 android:hint="180"
                 android:inputType="number"
                 android:textSize="15sp" >
-
-                <requestFocus />
             </EditText>
 
         </TableRow>
@@ -92,7 +90,7 @@
             android:paddingTop="8dp" >
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/resultado2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -114,8 +112,6 @@
                 android:hint="100"
                 android:inputType="number"
                 android:textSize="15sp" >
-
-                <requestFocus />
             </EditText>
         </TableRow>
 
@@ -127,7 +123,7 @@
             android:gravity="center" >
 
             <Button
-                android:id="@+id/buttonCalcular"
+                android:id="@+id/buttonGrabar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0"
@@ -141,19 +137,18 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:gravity="center"
             android:paddingTop="15dp" >
 
             <TextView
                 android:id="@+id/resultado"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:layout_marginBottom="30dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="0dp"
                 android:layout_span="2"
-                android:layout_weight="0"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="15sp" />
 

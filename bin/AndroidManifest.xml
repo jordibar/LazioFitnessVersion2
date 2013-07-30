@@ -7,6 +7,9 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
 
     <application
         android:allowBackup="true"
@@ -39,6 +42,7 @@
         <activity android:name=".CalculaFuerza"></activity>
         <activity android:name=".CalculaGrasa"></activity>
         <activity android:name=".CalculaPeso"></activity>
+        <activity android:name=".MostrarRegistrosPesos"></activity>
     </application>
 
 </manifest>

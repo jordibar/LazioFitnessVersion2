@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_margin="0dp"
-    android:background="@drawable/sugerencia"
+    android:fadingEdge="horizontal"
     android:orientation="vertical"
     android:padding="0dp" >
     
@@ -23,25 +22,27 @@
         android:textSize="@dimen/Titulo"
         android:textStyle="bold" />
     
-    <Button
-        android:id="@+id/botonPrincipal"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="2"
-        android:background="@color/transparente"
-        android:onClick="enviarSugerencia" />
-
-    <Button
-        android:id="@+id/buttonEnviarEmail"
-        android:layout_width="fill_parent"
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="0"
-        android:background="@color/negro"
-        android:onClick="enviarSugerencia"
+        android:gravity="center"
         android:padding="@dimen/padding15dp"
-        android:text="Envíanos tus sugerencias"
+        android:text="Evolución de tu peso"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/blanco"
-        android:textSize="16sp" />
+        android:textSize="@dimen/Titulo2"
+        android:textStyle="bold" />
+    
+    <ListView
+        android:id="@+id/resultadoLV"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:textSize="15dp" >
+    </ListView>
+    
 
 </LinearLayout>

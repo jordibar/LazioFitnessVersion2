@@ -26,29 +26,10 @@ public class CalculaGrasa extends Activity implements OnClickListener{
 		altura = (EditText) this.findViewById(R.id.altura);
 		cadera = (EditText) this.findViewById(R.id.cadera);
 		resultado = (TextView) this.findViewById(R.id.resultado);
-		buttonCalcular = (Button) this.findViewById(R.id.buttonCalcular);
+		buttonCalcular = (Button) this.findViewById(R.id.buttonGrabar);
 		
 		//Actions
 		buttonCalcular.setOnClickListener(this);
-		
-		altura.setBackgroundColor(Color.rgb(210, 105, 30));
-		
-		 altura.setOnFocusChangeListener(new OnFocusChangeListener() {
-
-		        @Override
-		        public void onFocusChange(View v, boolean hasFocus) {
-		            if (hasFocus) {
-		                v.setBackgroundColor(Color.BLACK);
-		                ((EditText) v).setTextColor(Color.RED);
-		            } else {
-		                v.setBackgroundColor(Color.RED);
-		                ((EditText) v).setTextColor(Color.WHITE);
-		            }
-
-		        }
-		    });
-		
-		
 	}
 
 	@Override
@@ -67,7 +48,7 @@ public class CalculaGrasa extends Activity implements OnClickListener{
 			total = (valorAltura * valorCadera);
 			
 			//Ponemos el resultado al TextEdit correspondiente
-			resultado.setText("Tu porcentaje de grasa es de " +String.valueOf(total)+ " cm.");
+			resultado.setText("Porcentaje de grasa: " +String.valueOf(total)+ " %."+"\n"+"\n"+"Puedes consultar tus dudas con tu monitor/a.");
 		}
 		
 	}

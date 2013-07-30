@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight" >
+    
+    	<TextView android:id="@+id/titulo"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:singleLine="true" />
+    	
+    	<TextView android:id="@+id/descripcion"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_below="@id/titulo"
+             android:layout_alignParentBottom="true"
+             android:gravity="center"/>
+    
+       <TextView android:id="@+id/subtitulo"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:text="Otro Texto"
+             android:layout_below="@id/titulo"
+             android:layout_alignParentBottom="true"
+             android:gravity="center"/>
+</RelativeLayout>
