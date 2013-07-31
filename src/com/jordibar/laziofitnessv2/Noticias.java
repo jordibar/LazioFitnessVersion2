@@ -14,7 +14,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.AlertDialog;
 import android.app.ListActivity;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -97,7 +99,7 @@ public class Noticias extends ListActivity{
 			el.printStackTrace();
 		}
 	
-	setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_2, android.R.id.text1, noticia_titulo));
+	setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, noticia_titulo));
 	
 	ListView lv_noticias;
 	lv_noticias = getListView();
@@ -106,10 +108,27 @@ public class Noticias extends ListActivity{
 	{
 		public void onItemClick(AdapterView<?>parent, View view, int position, long id)
 		{
-			//When clicked, show a toast with the TextView text
-			Toast.makeText(getApplicationContext(), noticia_descripcion[position], Toast.LENGTH_LONG).show();
-		}
-	});
+			AlertDialog dialog = new AlertDialog.Builder(Noticias.this).create();
 
+		    dialog.setCancelable(false);
+		    dialog.setTitle(noticia_titulo[position]);
+		    dialog.setMessage(noticia_descripcion[position]);
+		    dialog.setButton(DialogInterface.BUTTON_POSITIVE, "Cerrar", new DialogInterface.OnClickListener()
+		    {
+		        @Override
+		        public void onClick(DialogInterface dialog, int which) {
+		            // TODO Auto-generated method stub
+		            dialog.dismiss();		
+			
+			
+			
+			//When clicked, show a toast with the TextView text
+			//Toast.makeText(getApplicationContext(), noticia_descripcion[position], Toast.LENGTH_LONG).show();
+		        }
+		    });
+		    dialog.show();
+		}
+
+	});
 	}
 }
